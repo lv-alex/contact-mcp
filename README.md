@@ -81,6 +81,16 @@ Adjust the path and activation command for your environment.
 - `get_contact_with_details(lvaccount_id)`
 - `select_contacts_with_details(contact_filters, details_filters, contact_columns, details_columns, limit, offset, order_by)`
 
+## LLM Query Examples
+
+Use these prompts in your chat client to drive tool calls:
+
+- "Get contact and details for lvaccount_id 123456."
+- "List 10 contacts created in the last 7 days, ordered by createdate desc, include lvaccount_id, first_name, last_name, email_address."
+- "Find contacts with phone1_sms_consent = true and do_not_dial = false, limit 25."
+- "Show contact_details columns col1, col2, col3 where account = 'ABC123'."
+- "Give me contacts where paymentbalance > 1000 and state = 'TX'."
+
 ## Notes
 
 - Select-only queries.
