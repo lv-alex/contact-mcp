@@ -2,6 +2,20 @@
 
 MCP server for querying and managing contacts, transactions, and campaigns across PostgreSQL and Oracle databases.
 
+## What's New (v0.1.0 - 2026-02-20)
+
+This is the initial release of the Contact MCP Server with comprehensive features:
+
+- **Multi-database support** for PostgreSQL and Oracle with automatic DB link detection
+- **8 MCP tools** for querying contacts, transactions, and campaigns
+- **Campaign creation** with transaction requeue capabilities
+- **Comprehensive guardrails** including query limits, SQL validation, and data redaction
+- **Advanced filter syntax** with 12 operators (=, !=, >, >=, <, <=, like, in, between, etc.)
+- **Transaction archive scanning** across main + up to 2 archive tables
+- **Complete test suite** with unit tests for query building and transactions
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
+
 ## Features
 
 - **Multi-database support**: PostgreSQL and Oracle (via DB links)
